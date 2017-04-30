@@ -26,6 +26,12 @@ public class Controller {
     }
 
     @FXML
+    public void logarithmOnA()
+    {
+        textArea.setText(calculations.logarithm());
+    }
+
+    @FXML
     public void deleteOnA()
     {
         calculations.delete();
@@ -34,7 +40,13 @@ public class Controller {
     @FXML
     public void divisionOnA()
     {
-        calculations.whatCharacter(4);
+        textArea.setText(calculations.whatCharacter(4));
+    }
+
+    @FXML
+    public void deleteAllOnA()
+    {
+        calculations.deleteAll();
     }
 
     @FXML
@@ -44,21 +56,33 @@ public class Controller {
     }
 
     @FXML
+    public void secondPowerOnA()
+    {
+        textArea.setText(calculations.secondPower());
+    }
+
+    @FXML
     public void multiOnA()
     {
-        calculations.whatCharacter(3);
+        textArea.setText(calculations.whatCharacter(3));
+    }
+
+    @FXML
+    public void strongOnA()
+    {
+        textArea.setText(calculations.strong());
     }
 
     @FXML
     public void minusOnA()
     {
-        calculations.whatCharacter(2);
+        textArea.setText(calculations.whatCharacter(2));
     }
 
     @FXML
     public void plusOnA()
     {
-        calculations.whatCharacter(1);
+        textArea.setText(calculations.whatCharacter(1));
     }
 
     @FXML
@@ -74,9 +98,21 @@ public class Controller {
     }
 
     @FXML
-    public void pointOnA()
+    public void leftBracketOnA()
     {
 
+    }
+
+    @FXML
+    public void rightBracketOnA()
+    {
+
+    }
+
+    @FXML
+    public void pointOnA()
+    {
+        calculations.point();
     }
 
     @FXML
